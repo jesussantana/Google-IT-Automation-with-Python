@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # interpreter
 # Path: notebooks/2.Using Python to Interact with the Operating System/health_checks.py
-
+from network import *
 import shutil
 import psutil
 
@@ -16,8 +16,11 @@ def check_cpu_usage():
 
 if not check_disk_usage("/") or not check_cpu_usage():
     print("Error")
-else:
+elif check_localhost() and check_connectivity():
     print("Everything is OK!")
+else:
+    print("Netwoek checks failed")
+    
     
 # chmod +x health_checks.py
 # ./health_checks.py

@@ -19,7 +19,7 @@ if not check_disk_usage("/") or not check_cpu_usage():
 elif check_localhost() and check_connectivity():
     print("Everything is OK!")
 else:
-    print("Netwoek checks failed")
+    print("Network checks failed")
     
     
 # chmod +x health_checks.py

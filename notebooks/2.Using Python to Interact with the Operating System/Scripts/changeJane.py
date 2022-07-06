@@ -14,9 +14,4 @@ with open (sys.argv[1], "r") as myfile:
     #Dont forget to change to your own directory
     os.chdir('/home/student-02-06265fe82641/data')
     os.rename(base, baseNew)
-myfile.close()#!/usr/bin/env python3
-
-import sys
-import subprocess
-
-string.replace(old_substring, new_substring)
+myfile.close()
